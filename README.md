@@ -10,7 +10,7 @@ If you want something more than just a blank plugin, then you're probably better
 
 > **IMPORTANT**
 >
-> This template is provided AS-IS, without support, etc. Terms are in the [LICENSE](LICENSE) file. I built and ran this on Windows 11 and Rack 2.3. If there are issues, you can open an issue in this repo. You are responsible for any plugin you make based on this template.
+> This template is provided AS-IS, without support, etc. Terms are in the [LICENSE](LICENSE) file. I built and ran this on Windows 11 and Rack 2.3. If there are issues, you can open an issue in this repo. You are responsible for any plugin you make based on this template. If you need more help with building and coding a Rack plugin, [VCV Community - Development ](https://community.vcvrack.com/c/development) is a friendly place to go.
 
 Before you can build this plugin, you must set up a Rack development environment following the guide at [VCV Rack Plugin Development](https://vcvrack.com/manual/PluginDevelopmentTutorial).
 
@@ -30,7 +30,7 @@ To make it your own:
 
 3. Edit `res/Blank.svg` to give your blank module it's unique appearance. It's worthwhile reviewing the VCV Rack [Panel Guide](https://vcvrack.com/manual/Panel) for guidance on the design of the panel.
 
-If you want to publish your module to the library, see the information at he end of the [ Plugin Tutorial](https://vcvrack.com/manual/PluginDevelopmentTutorial).
+If you want to publish your module to the library, see the information at the end of the [ Plugin Tutorial](https://vcvrack.com/manual/PluginDevelopmentTutorial).
 
 I hope this was useful to you.
 
