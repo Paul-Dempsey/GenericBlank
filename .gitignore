@@ -1,0 +1,15 @@
+.DS_Store
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.res
+*.d
+*.dSYM
+*.xcf
+
+/build
+/dep
+/dist
+/patches

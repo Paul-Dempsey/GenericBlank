@@ -1,0 +1,23 @@
+{
+    "slug": "generic-blank",
+    "name": "company",
+    "version": "2.0.0",
+    "license": "MIT",
+    "brand": "mycompany",
+    "author": "",
+    "authorEmail": "",
+    "authorUrl": "",
+    "pluginUrl": "",
+    "manualUrl": "",
+    "sourceUrl": "",
+    "donateUrl": "",
+    "changelogUrl": "",
+    "modules": [
+      {
+        "slug": "blank",
+        "name": "Blank",
+        "description": "Generic blank panel",
+        "tags": [ "Visual", "Blank" ]
+      }
+    ]
+  }
