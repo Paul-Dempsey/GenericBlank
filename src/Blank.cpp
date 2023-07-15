@@ -52,7 +52,7 @@ struct BlankModule : Module
     // You can use a ::rack::dsp::timer to update relative to clock time, rather
     // than change based on sample rate.
     //
-    //const int PARAM_INTERVAL = 64
+    //const int PARAM_INTERVAL = 64;
     //int check_params = 0;
     //void processParams()
     //{
@@ -64,9 +64,10 @@ struct BlankModule : Module
     //void process(const ProcessArgs& args) override
     //{
     //    // Process params at intervals
-    //    //if (++check_params > PARAM_INTERVAL) {
-    //    //    processParams();
-    //    //}
+    //    if (++check_params > PARAM_INTERVAL) {
+    //        check_params = 0;    
+    //        processParams();
+    //    }
 
     //    // Read inputs
 
