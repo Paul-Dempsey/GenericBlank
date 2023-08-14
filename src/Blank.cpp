@@ -47,6 +47,14 @@ struct BlankModule : Module
     //}
     //void dataFromJson(json_t* root) override
     //{
+    //    auto j = json_object_get(root, "flag");
+    //    if (j) {
+    //        some_bool = json_is_true(j);
+    //    }
+    //    j = json_object_get(root, "number");
+    //    if (j) {
+    //        some_float = json_number_value(j);
+    //    }
     //}
 
     // To save precious CPU, many modules will process parameter changes at 
