@@ -12,6 +12,7 @@
     "sourceUrl": "",
     "donateUrl": "",
     "changelogUrl": "",
+    "minRackVersion": "2.4.0",
     "modules": [
       {
         "slug": "blank",

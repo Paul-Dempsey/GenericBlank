@@ -40,8 +40,12 @@ struct BlankModule : Module
     // Save and restore configuration and settings by overriding dataToJson/dataFromJson
     //json_t* dataToJson() override
     //{
+    //    auto root = json_object(); //create container
+    //    // json_object_set_new(root, "flag", json_boolean(some_bool));
+    //    // json_object_set_new(root, "number", json_real(some_float);
+    //    return root;
     //}
-    //void dataFromJson(json_t *root) override
+    //void dataFromJson(json_t* root) override
     //{
     //}
 
@@ -81,13 +85,13 @@ struct BlankModuleWidget : ModuleWidget
     BlankModuleWidget(BlankModule *module)
     {
         setModule(module);
-        setPanel(createPanel(asset::plugin(pluginInstance, "res/Blank.svg")));
+        setPanel(createPanel(asset::plugin(pluginInstance, "res/Blank.svg"), asset::plugin(pluginInstance, "res/Blank-dark.svg")));
 
         // Add standard rack screws
-        addChild(createWidget<ScrewSilver>(Vec(RACK_GRID_WIDTH, 0)));
-        addChild(createWidget<ScrewSilver>(Vec(box.size.x - 2 * RACK_GRID_WIDTH, 0)));
-        addChild(createWidget<ScrewSilver>(Vec(RACK_GRID_WIDTH, RACK_GRID_HEIGHT - RACK_GRID_WIDTH)));
-        addChild(createWidget<ScrewSilver>(Vec(box.size.x - 2 * RACK_GRID_WIDTH, RACK_GRID_HEIGHT - RACK_GRID_WIDTH)));
+        addChild(createWidget<ThemedScrew>(Vec(RACK_GRID_WIDTH, 0)));
+        addChild(createWidget<ThemedScrew>(Vec(box.size.x - 2 * RACK_GRID_WIDTH, 0)));
+        addChild(createWidget<ThemedScrew>(Vec(RACK_GRID_WIDTH, RACK_GRID_HEIGHT - RACK_GRID_WIDTH)));
+        addChild(createWidget<ThemedScrew>(Vec(box.size.x - 2 * RACK_GRID_WIDTH, RACK_GRID_HEIGHT - RACK_GRID_WIDTH)));
     }
 
     // Add options to your module's menu here
