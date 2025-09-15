@@ -1,14 +1,17 @@
 #include "plugin.hpp"
 
-Plugin *pluginInstance;
+Plugin * pluginInstance{nullptr};
 
-void init(Plugin *p)
+// The "init" function must be present.
+// Called by Rack when it loads the plugin.
+void init(Plugin * p)
 {
 	pluginInstance = p;
 
-	// Add modules here
+	// Register all models here so that Rack knows what to
+	// load and display in the module browser.
 	p->addModel(modelBlank);
 
-	// Any other plugin initialization may go here.
-	// As an alternative, consider lazy-loading assets and lookup tables when your module is created to reduce startup times of Rack.
+	// Other plugin initialization may go here. But a better strategy is to
+	// do other initialization on-demand in the module constructor.
 }
