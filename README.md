@@ -48,7 +48,7 @@ Click the **Use this template** button and choose **Create a new repository**.
 You can also download as a zip and unpack all the files to a folder in your Rack development `plugins` folder.
 
 After setting up your copy of GenericBlank, make sure that you can build and run it before you make any changes.
-If you aren't able to build and run for some reason,
+If you aren't able to build and run for some reason, you can ask for help on the [GenericBlank community thread](https://community.vcvrack.com/t/getting-started-using-genericblank-by-d).
 
 ## Next steps
 
